@@ -29,3 +29,30 @@
   color: rgba(255, 255, 255, 1);
   background-color: rgba(9, 180, 81, 1);
 }
+.header-mobile {
+  display: none;
+}
+/* đang CSS cho màn hình nhỏ hơn 1000px */
+@media only screen and (max-width: 1000px) {
+  .desktop {
+    display: none;
+  }
+  .header-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-mobile i {
+    font-size: 30px;
+  }
+  .header-mobile img {
+    width: 300px;
+  }
+  .header-mobile .logo {
+    display: flex;
+    align-items: center;
+  }
+  .header-mobile .logo i {
+    margin-right: 20px;
+  }
+}
